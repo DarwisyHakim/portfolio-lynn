@@ -1,40 +1,40 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./App.css";
-
+const img = (name) => `${import.meta.env.BASE_URL}works/${name}`;
 const heroImages = [
-  "public/works/dragon bg 3.jpg",
-  "/works/dragon bg1.jpg",
-  "/works/night.jpg",
-  "/works/spacepop.png",
-  "/works/space_ship.jpg",
+  img("dragon bg 3.jpg"),
+  img("dragon bg1.jpg"),
+  img("night.jpg"),
+  img("spacepop.png"),
+  img("space_ship.jpg"),
 ];
 
 const visualDevelopment = [
   {
     title: "Forest Dragon",
     category: "Visual Development",
-    image: "/works/dragon bg 3.jpg",
+    image: img("dragon bg 3.jpg"),
   },
   {
     title: "Dragon Branch",
     category: "Environment Concept",
-    image: "/works/dragon bg1.jpg",
+    image: img("dragon bg1.jpg"),
   },
   {
     title: "Cliff House",
     category: "Environment Design",
-    image: "/works/night.jpg",
+    image: img("night.jpg"),
   },
   {
     title: "Space Pop",
     category: "Space Concept",
-    image: "/works/spacepop.png",
+    image: img("spacepop.png"),
   },
   {
     title: "Space Ship",
     category: "Vehicle Concept",
-    image: "/works/space_ship.jpg",
+    image: img("space_ship.jpg"),
   },
 ];
 
@@ -42,27 +42,27 @@ const characterDesign = [
   {
     title: "Mushroom Character",
     category: "Character Exploration",
-    image: "/works/+=¦d¦-º@.jpg",
+    image: img("+=¦d¦-º@.jpg"),
   },
   {
     title: "Character Lineup",
     category: "Production Sketches",
-    image: "/works/Aug-31st.jpg",
+    image: img("Aug-31st.jpg"),
   },
   {
     title: "Bunny Character",
     category: "Character Design",
-    image: "/works/bunny_20141110.jpg",
+    image: img("bunny_20141110.jpg"),
   },
   {
     title: "Wukong",
     category: "Character Design",
-    image: "/works/small-wukong.jpg",
+    image: img("small-wukong.jpg"),
   },
   {
     title: "Tiger Pose",
     category: "Character Poses",
-    image: "/works/tiger_pose_20141028.jpg",
+    image: img("tiger_pose_20141028.jpg"),
   },
 ];
 
@@ -70,22 +70,22 @@ const expressionSheets = [
   {
     title: "Boy Expressions",
     category: "Expression Sheet",
-    image: "/works/cathayIIexpressions_boy (2).jpg",
+    image: img("cathayIIexpressions_boy (2).jpg"),
   },
   {
     title: "Girl Expressions",
     category: "Expression Sheet",
-    image: "/works/cathayIIexpressions_girl edit.jpg",
+    image: img("cathayIIexpressions_girl edit.jpg"),
   },
   {
     title: "Rabbit Expressions",
     category: "Expression Sheet",
-    image: "/works/rabbit_expression_20141029.jpg",
+    image: img("rabbit_expression_20141029.jpg"),
   },
   {
     title: "Dog Poses",
     category: "Pose Exploration",
-    image: "/works/dog_expressions_poses_20141027.jpg",
+    image: img("dog_expressions_poses_20141027.jpg"),
   },
 ];
 
@@ -93,32 +93,32 @@ const creatureDesign = [
   {
     title: "Dragon Head Study",
     category: "Creature Design",
-    image: "/works/dragon head study.jpg",
+    image: img("dragon head study.jpg"),
   },
   {
     title: "Dragon Sketches",
     category: "Creature Exploration",
-    image: "/works/dragon sketch 12.jpg",
+    image: img("dragon sketch 12.jpg"),
   },
   {
     title: "Dragon Forms",
     category: "Creature Exploration",
-    image: "/works/dragon sketch 3.jpg",
+    image: img("dragon sketch 3.jpg"),
   },
   {
     title: "Dragon Line Study",
     category: "Creature Sketches",
-    image: "/works/dragon sketches 1.jpg",
+    image: img("dragon sketches 1.jpg"),
   },
   {
     title: "Fish Creatures",
     category: "Creature Design",
-    image: "/works/fish3.jpg",
+    image: img("fish3.jpg"),
   },
   {
     title: "Octopus Designs",
     category: "Creature Design",
-    image: "/works/octupus-2.jpg",
+    image: img("octupus-2.jpg"),
   },
 ];
 
